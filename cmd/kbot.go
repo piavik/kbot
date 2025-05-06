@@ -32,7 +32,7 @@ to quickly create a Cobra application.`,
 		kbot, err := telebot.NewBot(telebot.Settings{
 			URL:    "",
 			Token:  TeleToken,
-			Poller: &telebot.longPoller{Timeout: 10 * time.Second},
+			Poller: &telebot.LongPoller{Timeout: 10 * time.Second},
 		})
 
 		if err != nil {
