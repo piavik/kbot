@@ -1,6 +1,5 @@
 /*
 Copyright © 2025 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
@@ -9,7 +8,9 @@ import (
 
 	"github.com/spf13/cobra"
 )
+
 var appVersion = "Version"
+
 // versionCmd represents the version command
 var versionCmd = &cobra.Command{
 	Use:   "version",
@@ -35,6 +36,6 @@ func init() {
 	// versionCmd.PersistentFlags().String("foo", "", "A help for foo")
 
 	// Cobra supports local flags which will only run when this command
-	// is called directly, e.g.:
+	// is called directly, e.g.: |-X=|
 	// versionCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
